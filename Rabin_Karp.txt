@@ -1,0 +1,9 @@
+Rabin-Karp Algorithm:
+In the Naive String Matching algorithm, we check whether every substring of the text of the pattern’s size is equal to the pattern or not one by one.
+
+Like the Naive Algorithm, the Rabin-Karp algorithm also check every substring. But unlike the Naive algorithm, the Rabin Karp algorithm matches the hash value of the pattern with the hash value of the current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for the following strings.
+
+Pattern itself
+All the substrings of the text of length m which is the size of pattern.
+
+Hash value is used to efficiently check for potential matches between a pattern and substrings of a larger text. The hash value is calculated using a rolling hash function, which allows you to update the hash value for a new substring by efficiently removing the contribution of the old character and adding the contribution of the new character. This makes it possible to slide the pattern over the text and calculate the hash value for each substring without recalculating the entire hash from scratch.
