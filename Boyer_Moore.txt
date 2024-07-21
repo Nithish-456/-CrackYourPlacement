@@ -1,0 +1,5 @@
+Boyer Moore is a combination of the following two approaches. 
+
+Bad Character Heuristic 
+Good Suffix Heuristic 
+Both of the above heuristics can also be used independently to search a pattern in a text. Let us first understand how two independent approaches work together in the Boyer Moore algorithm.
